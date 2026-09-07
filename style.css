@@ -16,3 +16,32 @@ h1{font-size:clamp(64px,8vw,118px);text-transform:uppercase}h1 span{color:var(--
 .author{background:#111722;max-width:none}.contact{background:#0b0e13;max-width:none}.note{color:var(--muted);font-size:13px}
 footer{padding:30px 8%;display:flex;justify-content:space-between;color:#888;font-size:12px;border-top:1px solid #ffffff15}
 @media(max-width:800px){nav{align-items:flex-start}.navlinks{gap:12px}.hero-grid,.book{grid-template-columns:1fr;gap:45px}.hero{padding-left:6%;padding-right:6%}.section{padding:75px 7%}.quote{font-size:30px}footer{display:block}footer div+div{margin-top:8px}}
+
+
+/* Full-story reader */
+.text-link{display:inline-block;margin-top:18px;color:var(--gold);font-weight:600;text-decoration:none}
+.read-section{background:var(--paper);color:var(--ink);padding:100px 7% 90px}
+.read-intro{max-width:900px;margin:0 auto 55px}
+.read-intro h2{font-size:clamp(52px,7vw,86px);margin-bottom:12px}
+.read-subtitle{font-family:"Cormorant Garamond",Georgia,serif;font-size:25px;max-width:720px;color:#4e4d49}
+.toc{margin-top:45px;padding:28px;background:#ebe7de;border-left:3px solid var(--gold)}
+.toc h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:30px;margin:0 0 16px}
+.toc a{display:block;color:var(--ink);text-decoration:none;padding:9px 0;border-bottom:1px solid #00000012}
+.toc a:last-child{border-bottom:0}
+.toc a span{display:inline-block;min-width:115px;font-size:11px;letter-spacing:.16em;color:#a57417;font-weight:700}
+.story{max-width:760px;margin:0 auto}
+.story-part{padding:80px 0 20px;border-top:1px solid #00000018;scroll-margin-top:25px}
+.story-part:first-child{border-top:0;padding-top:20px}
+.story-label{font-size:12px;letter-spacing:.25em;color:#b37d16;font-weight:700;margin:0 0 12px}
+.story-part h3{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(42px,6vw,68px);line-height:.95;margin:0 0 30px}
+.story-part p{font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;line-height:1.75;margin:0 0 20px;color:#252525}
+.story-part .dialogue{padding-left:22px;font-style:italic}
+.back-top{text-align:center;margin:65px auto 0}
+.back-top a{color:#6e5014;text-decoration:none;font-weight:600}
+@media(max-width:800px){
+  .read-section{padding:70px 7% 65px}
+  .toc{padding:22px}
+  .toc a span{display:block;margin-bottom:3px}
+  .story-part{padding-top:62px}
+  .story-part p{font-size:20px;line-height:1.72}
+}
