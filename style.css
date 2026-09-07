@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+:root{--ink:#111318;--muted:#aeb3bc;--paper:#f3f0e9;--gold:#d59b2a;--dark:#080b10}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--dark);color:#f7f5ef;font-family:Inter,Arial,sans-serif;line-height:1.7}
+.hero{min-height:100vh;background:radial-gradient(circle at 75% 35%,#4a3b25 0,#121720 38%,#080b10 72%);padding:28px 7% 70px}
+nav{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff20;padding-bottom:20px}
+.brand{font-size:12px;letter-spacing:.22em;font-weight:600}.navlinks{display:flex;gap:28px}.navlinks a{color:#fff;text-decoration:none;font-size:13px}
+.hero-grid{max-width:1200px;margin:70px auto 0;display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:center}
+.eyebrow{letter-spacing:.28em;font-size:12px;color:var(--gold);font-weight:600}
+h1,h2{font-family:"Cormorant Garamond",Georgia,serif;line-height:.92;margin:18px 0}
+h1{font-size:clamp(64px,8vw,118px);text-transform:uppercase}h1 span{color:var(--gold)}
+.tagline{font-family:"Cormorant Garamond",Georgia,serif;font-size:25px;max-width:500px;color:#ddd8cf}
+.button{display:inline-block;margin-top:20px;padding:13px 22px;background:var(--gold);color:#111;text-decoration:none;font-weight:600}
+.cover-wrap{display:flex;justify-content:center}.cover-wrap img{width:min(100%,500px);box-shadow:0 30px 80px #000b;border:1px solid #ffffff15}
+.section{padding:110px 8%;max-width:1200px;margin:auto}.book{display:grid;grid-template-columns:1fr .7fr;gap:90px;background:var(--paper);color:var(--ink);max-width:none}
+.book h2,.author h2,.contact h2{font-size:clamp(42px,5vw,70px)}.book p{max-width:680px}.quote{align-self:center;font-family:"Cormorant Garamond",Georgia,serif;font-size:38px;font-style:italic;border-left:2px solid var(--gold);padding-left:35px}
+.author{background:#111722;max-width:none}.contact{background:#0b0e13;max-width:none}.note{color:var(--muted);font-size:13px}
+footer{padding:30px 8%;display:flex;justify-content:space-between;color:#888;font-size:12px;border-top:1px solid #ffffff15}
+@media(max-width:800px){nav{align-items:flex-start}.navlinks{gap:12px}.hero-grid,.book{grid-template-columns:1fr;gap:45px}.hero{padding-left:6%;padding-right:6%}.section{padding:75px 7%}.quote{font-size:30px}footer{display:block}footer div+div{margin-top:8px}}
